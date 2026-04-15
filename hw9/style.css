@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg93k7w.png);
+    background-repeat: no-repeat;
+    max-width: 1536px;
+    min-height: 1583px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+}
+
+.container > * {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: minmax(20px, 100px) minmax(20px, 513px) minmax(20px, 383px) minmax(20px, 574px);
+    grid-template-columns: minmax(20px, 200px) minmax(20px, 235px) minmax(20px, 661px) minmax(20px, 440px);
+    grid-template-areas: 
+        "one five five five"
+        "two two two two"
+        "three three three three"
+        "four four six seven";
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+    display: grid;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+ul {
+    font-family: "hh sans", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #fff;
+    max-width: 100%;
+    min-height: 100%;
+    align-items: end;
+    gap: 9px;
+}
+
+.employers {
+    flex-basis: 144px;
+    padding-left: 21px;
+    padding-bottom: 14px;
+}
+
+.help {
+    flex-basis: 783px;
+    padding-bottom: 14px;
+}
+
+.resume {
+    flex-basis: 133px;
+    color: #a5e2b6;
+    border: 1px solid rgba(165, 226, 182, .5);
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px 10px 8px 10px;
+    margin-bottom: 3px;
+}
+
+.comein {
+    flex-basis: 104px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 12px 10px 8px 10px;
+    margin-bottom: 3px;
+}
+
+.buttonMenu {
+    display: none;
+    background: none;
+    border: none;
+}
+
+.fa.fa-bars {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .buttonMenu {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 0;
+        z-index: 1000;
+    }
+
+    .fa.fa-bars {
+        display: block;
+    }
+
+    .container {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "six"
+            "seven";
+    }
+
+    .box5 {
+        display: none;
+    }
+
+    .box5.mobileMenu {
+        display: block;
+        position: fixed;
+        top: 50px;
+        right: 0;
+        z-index: 1000;
+    }
+
+    ul {
+        flex-direction: column;
+        background-color: grey;
+        align-items: center;
+    }
+
+    .employers {
+        flex-basis: auto;
+        padding: 10px;
+    }
+
+    .help {
+        flex-basis: auto;
+        padding: 10px;
+    }
+
+    .resume {
+         flex-basis: auto;
+    }
+
+    .comein {
+        flex-basis: auto;
+    }
+}
