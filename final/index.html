@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Final Project</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <button onclick='toggleTheme()' style='position: fixed; top:0'>Switch Style</button>
+    <button class="buttonMenu fa fa-bars"></button>
+    <!-- <img src='https://cdn.imgchest.com/files/wye3cd58r4b.png' style='position: absolute; top:0; left:0;z-index:-1'> -->
+
+    <div class="container">
+        <header class="hero">
+            <nav class="navbar">
+                <div class="box1">
+                    <img class="logo" src="https://i.hh.ru/styles/images/logos/hh.ru__min_.svg?v=23122024"></img>
+                </div>
+
+                <div class="box5">
+                    <ul class="menu">
+                        <li class="employers">For employers</li>
+                        <li class="help">Help</li>
+                        <li class="resume">Create resume</li>
+                        <li class="comein">To come in</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="box2">
+                <div class="search">
+                    <h1 class="title">Find your dream job</h1>
+
+                    <form>
+                        <input class="search_bar" type="search" placeholder="Profession, position or company"/>
+                        <button class="submit">Find a job</button>
+
+                        <span class="advanced">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" class="magritte-icon___rRr4Q_14-2-1 magritte-icon_initial-primary___KhLAU_14-2-1" aria-label="Advanced search" _mstaria-label="252213" _mstHash="658">
+                                <g>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8 7c0-.733.187-1.272.458-1.598C6.48 5.135 6.933 4.8 8 4.8s1.52.335 1.742.602c.271.326.458.865.458 1.598s-.187 1.272-.458 1.598C9.52 8.865 9.067 9.2 8 9.2s-1.52-.335-1.742-.602C5.987 8.272 5.8 7.733 5.8 7m-1.728-.9C4.348 4.441 5.453 3 8 3s3.652 1.441 3.928 3.1H23v1.8H11.928C11.652 9.56 10.546 11 8 11S4.348 9.559 4.072 7.9H1V6.1zM16 13c2.547 0 3.652 1.441 3.928 3.1H23v1.8h-3.072C19.652 19.56 18.547 21 16 21s-3.652-1.441-3.928-3.1H1v-1.8h11.072C12.348 14.441 13.453 13 16 13m-1.742 2.402c-.271.326-.458.865-.458 1.598s.187 1.272.458 1.598c.223.267.675.602 1.742.602s1.52-.335 1.742-.602c.271-.326.458-.865.458-1.598s-.187-1.272-.458-1.598c-.223-.267-.675-.602-1.742-.602s-1.52.335-1.742.602" fill="currentColor"></path>
+                                </g>
+                            </svg>
+                        </span>
+                    </form>
+
+                    <a href="#" class="extra_search">I am looking for an employee</a>
+                </div>
+
+                <div class="stats">
+                    <div class="facts">
+                        <div class="stat">
+                            <span class="stat_num">206 365</span>
+                            <span class="stat_label">summary</span>
+                        </div>
+
+                        <div class="stat">
+                            <span class="stat_num">2652</span>
+                            <span class="stat_label">vacancies</span>
+                        </div>
+
+                        <div class="stat">
+                            <span class="stat_num">4 136</span>
+                            <span class="stat_label">companies</span>
+                        </div>
+                    </div>
+
+                    <div class="apps">
+                        <div class="app_button app_button_ios"></div>
+                        <div class="app_button app_button_android"></div>
+                        <div class="app_button app_button_huawei"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="box3">
+            <div class="categories">
+                <div class="categories_up">
+                    <div class="card card_pink">
+                        <div class="card_title">Jobs of the day</div>
+                        <div class="card_salary">20 000 – 50 000 KGS</div>
+                        <div class="card_vacancies">14&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_pink">
+                        <div class="card_title">Companies of the day</div>
+                        <div class="card_vacancies">23&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_pink">
+                        <div class="card_title">Work from home</div>
+                        <div class="card_vacancies">79&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_beige">
+                        <div class="card_title">part time job</div>
+                        <div class="card_salary">900 – 166 800 KGS</div>
+                        <div class="card_vacancies">231&nbsp; vacancies</div>
+                    </div>
+                </div>
+
+                <div class="categories_down">
+                    <div class="card card_purple">
+                        <div class="card_title">Administrator</div>
+                        <div class="card_salary">900 – 43 500 KGS</div>
+                        <div class="card_vacancies">95&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_beige">
+                        <div class="card_title">Operator</div>
+                        <div class="card_salary">9 000 – 85 800 KGS</div>
+                        <div class="card_vacancies">131&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_yellow">
+                        <div class="card_title">Programmer</div>
+                        <div class="card_salary">6 100 – 388 100 KGS</div>
+                        <div class="card_vacancies">125&nbsp; vacancies</div>
+                    </div>
+
+                    <div class="card card_green">
+                        <div class="card_title">Manager</div>
+                        <div class="card_salary">4 800 - 126 000 KGS</div>
+                        <div class="card_vacancies">641&nbsp; vacancies</div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="professions">22 more professions</a>
+        </div>
+
+        <div class="box4">
+            <h2 class="box4_title">Work in Bishkek</h2>
+            <div class="banner">
+                <img src="https://i.postimg.cc/rs6Xtnb9/Snimok-ekrana-(1716).png" alt="FINCA Bank"/>
+            </div>
+
+            <ul class="company_list">
+                <li class="company"><div>LLC I-Trade</div><span>2</span></li>
+                <li class="company"><div>LLC Alliance Asia Travel</div><span>1</span></li>
+                <li class="company"><div>Mairam Group</div><span>1</span></li>
+                <li class="company"><div>HTI Group</div><span>5</span></li>
+                <li class="company"><div>LLC Smart Fashion</div><span>1</span></li>
+                <li class="company"><div>TM Toyboss</div><span>1</span></li>
+                <li class="company"><div>well furniture</div><span>1</span></li>
+                <li class="company"><div>LLC GABB Trade</div><span>2</span></li>
+                <li class="company"><div>English Zone</div><span>4</span></li>
+                <li class="company"><div>exotic tour</div><span>1</span></li>
+                <li class="company"><div>Smoke.kg</div><span>3</span></li>
+                <li class="company"><div>MFC Alma credit</div><span>1</span></li>
+            </ul>
+        </div>
+        
+        <div class="box6">
+            <h2 class="box6_title">Jobs of the day in Bishkek</h2>
+
+            <div class="jobs">
+                <div class="jobs_col">
+                    <div class="job">
+                        <div class="job_title">hookah master</div>
+                        <div class="job_salary">from 30,000 to 40,000 KGS</div>
+                        <div class="job_company">Bakirov Daneke, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Client Relations Manager</div>
+                        <div class="job_salary">from 20,000 to 80,000 KGS</div>
+                        <div class="job_company">Umai Beauty (IP Seytbekov B.K.), Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Consultant 1C</div>
+                        <div class="job_salary">from 20,000 to 40,000 KGS</div>
+                        <div class="job_company">LLC ASU Technologies, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">English speaking office manager</div>
+                        <div class="job_salary">from 25,000 to 30,000 KGS</div>
+                        <div class="job_company">Advance Academy, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Manager - foreman</div>
+                        <div class="job_salary">from 35,000 to 50,000 KGS</div>
+                        <div class="job_company">Esenbekov, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title extra">Sensory integration instructor (exercise therapy, AFC) / ABA instructor</div>
+                        <div class="job_salary">from 25,000 to 50,000 KGS</div>
+                        <div class="job_company">Motivation (IP Amiraeva S), Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Nurse / Nurse</div>
+                        <div class="job_salary">from 25,000 to 35,000 KGS</div>
+                        <div class="job_company">Edel Medical Center, Bishkek</div>
+                    </div>
+                </div>
+
+                <div class="jobs_col">
+                    <div class="job">
+                        <div class="job_title">Clothing Sales Consultant</div>
+                        <div class="job_salary">from 18,000 to 30,000 KGS</div>
+                        <div class="job_company">LLC Smart Fashion, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Office Manager</div>
+                        <div class="job_salary">from 30,000 to 40,000 KGS</div>
+                        <div class="job_company">LLC Happy tour (Happy tour), Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Head of Sales Department</div>
+                        <div class="job_salary">from 20,000 to 80,000 KGS</div>
+                        <div class="job_company">Growth Academy, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Account Manager</div>
+                        <div class="job_salary">from 25,000 to 30,000 KGS</div>
+                        <div class="job_company">Televenta (IP Jamalbekov A), Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Shop assistant</div>
+                        <div class="job_salary">from 20,000 to 30,000 KGS</div>
+                        <div class="job_company">PE Omorova, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Accountant</div>
+                        <div class="job_salary">from 45,000 to 60,000 KGS</div>
+                        <div class="job_company">Rustamov Kairat, Bishkek</div>
+                    </div>
+
+                    <div class="job">
+                        <div class="job_title">Cashier</div>
+                        <div class="job_salary">from 16,000 to 18,000 KGS</div>
+                        <div class="job_company">BAITUR, Bishkek</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box7">
+            <img class="ad_resume" src="https://i.postimg.cc/xJPFwR9j/Snimok-ekrana-(1718).png" alt="Send resume"/>
+            <img class="ad_quest" src="https://i.postimg.cc/tZzmK59Z/Snimok-ekrana-(1717).png" alt="10 questions for interview"/>
+        </div>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            
+            if (theme.getAttribute('href') == 'style.css') {
+                theme.setAttribute('href', 'style2.css');
+            } else {
+                theme.setAttribute('href', 'style.css');
+            }
+        }
+
+        const buttonMenu = document.querySelector('.buttonMenu')
+        const boxFive = document.querySelector('.box5') 
+
+        buttonMenu.addEventListener('click', ()=> {
+            console.log('yes, hamburger clicked!')
+
+
+            boxFive.classList.toggle("mobileMenu")
+        })
+    </script>
+  </body>
+</html>
